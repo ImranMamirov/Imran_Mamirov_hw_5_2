@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_5_2
+package com.example.imran_mamirov_hw_LoveCalculator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
