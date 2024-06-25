@@ -8,7 +8,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.imran_mamirov_hw_5_2"
+        applicationId = "com.example.imran_mamirov_hw_LoveCalculator"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -49,6 +49,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+
+    //twee
+    implementation (libs.material)
 }
