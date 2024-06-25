@@ -1,6 +1,7 @@
 package com.example.imran_mamirov_hw_5_2
 
 import android.app.Application
+import com.example.imran_mamirov_hw_5_2.data.api.LoveApiService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
