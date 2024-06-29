@@ -1,12 +1,14 @@
 package com.example.imran_mamirov_hw_LoveCalculator.data.repository
 
 import androidx.lifecycle.MutableLiveData
+import com.example.imran_mamirov_hw_LoveCalculator.data.api.LoveApiService
 import com.example.imran_mamirov_hw_LoveCalculator.data.model.LoveResult
-import com.example.imran_mamirov_hw_LoveCalculator.retrofit.RetrofitService
+import javax.inject.Inject
 
-class LoveCalculatorRepository {
+class LoveCalculatorRepository @Inject constructor(
+    private val api: LoveApiService
+) {
 
-    private val api = RetrofitService().api
     private var loveResults = MutableLiveData<LoveResult>()
 
     fun getLoveResult(firstName: String, secondName: String): MutableLiveData<LoveResult> {
