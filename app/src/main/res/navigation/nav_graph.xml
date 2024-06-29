@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragmentFragment">
+
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" >
+        <action
+            android:id="@+id/action_onBoardFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardPagingFragment"
+        android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard.OnBoardPagingFragment"
+        android:label="fragment_on_board_paging"
+        tools:layout="@layout/fragment_on_board_paging" />
+    <fragment
+        android:id="@+id/mainFragmentFragment"
+        android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.MainFragment"
+        android:label="fragment_main_fragment"
+        tools:layout="@layout/fragment_main_fragment" >
+        <action
+            android:id="@+id/action_mainFragmentFragment_to_onBoardFragment"
+            app:destination="@id/onBoardFragment" />
+        <action
+            android:id="@+id/action_mainFragmentFragment_to_loveCalculatorFragment"
+            app:destination="@id/loveCalculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loveCalculatorFragment"
+        android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.love.LoveCalculatorFragment"
+        android:label="fragment_love_calculator"
+        tools:layout="@layout/fragment_love_calculator" />
+</navigation>

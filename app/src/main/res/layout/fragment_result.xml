@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.ResultFragment">
+    tools:context="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.love.ResultFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

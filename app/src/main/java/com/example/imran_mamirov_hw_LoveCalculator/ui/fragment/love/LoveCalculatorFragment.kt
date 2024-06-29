@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment
+package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.love
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,18 +6,19 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.viewModels
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.FragmentLoveCalculatorBinding
+import com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.LoveCalculatorViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LoveCalculatorFragment : Fragment() {
 
     private val binding by lazy {
         FragmentLoveCalculatorBinding.inflate(layoutInflater)
     }
-    private val viewModel by lazy {
-        ViewModelProvider(this)[LoveCalculatorViewModel::class.java]
-    }
+    private val viewModel: LoveCalculatorViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

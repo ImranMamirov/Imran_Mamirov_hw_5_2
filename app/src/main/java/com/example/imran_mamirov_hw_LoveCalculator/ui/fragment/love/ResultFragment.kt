@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment
+package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.love
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.FragmentResultBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ResultFragment : Fragment() {
 
     private val binding: FragmentResultBinding by lazy {
@@ -40,7 +42,6 @@ class ResultFragment : Fragment() {
             parentFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, loveCalculatorFragment).addToBackStack(null)
                 .commit()
-
         }
     }
 }
