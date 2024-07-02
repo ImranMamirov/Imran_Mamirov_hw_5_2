@@ -5,11 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.FragmentResultBinding
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
+
 class ResultFragment : Fragment() {
 
     private val binding: FragmentResultBinding by lazy {
@@ -19,7 +20,7 @@ class ResultFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         return binding.root
     }
 
@@ -38,10 +39,7 @@ class ResultFragment : Fragment() {
         tvProcent.text = "$percentage%"
 
         btnTryAgain.setOnClickListener {
-            val loveCalculatorFragment = LoveCalculatorFragment()
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, loveCalculatorFragment).addToBackStack(null)
-                .commit()
+            findNavController().navigateUp()
         }
     }
 }

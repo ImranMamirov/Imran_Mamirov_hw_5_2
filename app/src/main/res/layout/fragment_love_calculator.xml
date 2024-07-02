@@ -92,6 +92,13 @@
                     android:paddingHorizontal="50dp"
                     android:text="@string/calc" />
 
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/item_history"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"/>
+
 
             </LinearLayout>
 

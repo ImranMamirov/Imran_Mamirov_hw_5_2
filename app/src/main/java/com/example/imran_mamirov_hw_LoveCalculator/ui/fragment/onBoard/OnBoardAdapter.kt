@@ -1,13 +1,12 @@
 package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard
 
 import android.os.Bundle
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard.OnBoardPagingFragment.Companion.ARG_ONBOARD_POSITION
 
-class OnBoardAdapter(fragment: FragmentActivity) : FragmentStateAdapter(fragment) {
+class OnBoardAdapter(fragment: OnboardFragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int {
-        return 3
+        return 4
     }
 
     override fun createFragment(position: Int): OnBoardPagingFragment {

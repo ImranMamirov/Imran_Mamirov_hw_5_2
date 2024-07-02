@@ -31,16 +31,19 @@ class OnBoardPagingFragment : Fragment() {
         with(binding) {
             when (position) {
                 0 -> {
-                    tvTitle.text = "Have a good time"
-                    tvDescription.text = "You Should take the time to help those who need you"
+                    tvTitle.text = "It`s Funs and many more"
                 }
                 1 -> {
-                    tvTitle.text = "Cherishing love"
-                    tvDescription.text = "It is now no longer possible for you to cherish love"
+                    tvTitle.text = "Have a good time " +
+                            "You Should take the time to help those who need you"
                 }
                 2 -> {
-                    tvTitle.text = "Have a breakup?"
-                    tvDescription.text = "We have made the correction  for you don`t worry Maybe someone is waiting for you"
+                    tvTitle.text = "Cherishing love " +
+                            "It is now no longer possible for you to cherish love"
+                }
+                3 -> {
+                    tvTitle.text = "Have a breakup? " +
+                            "We have made the correction  for you don`t worry Maybe someone is waiting for you"
                 }
             }
         }
