@@ -16,15 +16,17 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class OnboardFragment : Fragment() {
 
+    private val binding by lazy {
+        FragmentOnBoardBinding.inflate(layoutInflater)
+    }
     @Inject
     lateinit var sharedPreferences: SharedPreferences
-    private lateinit var binding: FragmentOnBoardBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return binding.root
+        return (binding.root)
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -54,8 +56,8 @@ class OnboardFragment : Fragment() {
             }
         }
         binding.startButton.setOnClickListener{
-            sharedPreferences.setOnboardingComplete()
-            findNavController().navigate(R.id.action_onBoardFragment_to_loveCalculatorFragment)
+            sharedPreferences.setOnboardingComplete(true)
+            findNavController().navigate(R.id.action_onboardFragment_to_loveCalculatorFragment)
         }
     }
 }

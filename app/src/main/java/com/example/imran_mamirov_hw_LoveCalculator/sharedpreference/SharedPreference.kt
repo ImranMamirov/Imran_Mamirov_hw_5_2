@@ -15,7 +15,7 @@ class SharedPreferences @Inject constructor(private val sharedPreferences: Share
         return sharedPreferences.getBoolean(SHOWN, false)
     }
 
-    fun setOnboardingComplete() {
+    fun setOnboardingComplete(b: Boolean) {
         sharedPreferences.edit().putBoolean(SHOWN, true).apply()
     }
 }

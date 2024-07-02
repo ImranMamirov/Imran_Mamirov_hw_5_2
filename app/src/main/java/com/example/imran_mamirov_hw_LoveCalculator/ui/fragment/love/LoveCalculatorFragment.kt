@@ -16,12 +16,13 @@ import com.example.imran_mamirov_hw_LoveCalculator.data.api.LoveApiService
 import com.example.imran_mamirov_hw_LoveCalculator.data.api.LoveResult
 import com.example.imran_mamirov_hw_LoveCalculator.history.HistoryDao
 import com.example.imran_mamirov_hw_LoveCalculator.history.HistoryEntity
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import okhttp3.Response
 import javax.inject.Inject
 import javax.security.auth.callback.Callback
 
-
+@AndroidEntryPoint
 class LoveCalculatorFragment : Fragment() {
 
     private val binding by lazy {
