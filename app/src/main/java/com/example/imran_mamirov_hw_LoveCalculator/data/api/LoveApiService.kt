@@ -1,6 +1,5 @@
 package com.example.imran_mamirov_hw_LoveCalculator.data.api
 
-import com.example.imran_mamirov_hw_LoveCalculator.data.model.LoveResult
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header
