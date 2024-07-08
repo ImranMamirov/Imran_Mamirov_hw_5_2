@@ -1,22 +1,27 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard.OnBoardPagingFragment">
 
-    <ImageView
-        android:id="@+id/img_on_board"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:src="@drawable/ic_launcher_background" />
-
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:textSize="36sp"
-        android:layout_height="wrap_content"
-        android:text="hello" />
+        android:text="hello"
+        android:textSize="28sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="12dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie1" />
 
 </FrameLayout>

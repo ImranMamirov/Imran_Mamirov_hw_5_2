@@ -41,5 +41,9 @@ class ResultFragment : Fragment() {
         btnTryAgain.setOnClickListener {
             findNavController().navigateUp()
         }
+
+        historyImg.setOnClickListener{
+            findNavController().navigate(R.id.action_resultFragment_to_historyFragment)
+        }
     }
 }

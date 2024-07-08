@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.data.api
+package com.example.imran_mamirov_hw_LoveCalculator.data.network
 
 import com.google.gson.annotations.SerializedName
 

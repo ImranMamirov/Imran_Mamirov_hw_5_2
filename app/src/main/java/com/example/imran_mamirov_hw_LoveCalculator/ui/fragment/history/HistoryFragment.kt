@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.history
+package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.history
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -12,6 +12,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.FragmentHistoryBinding
+import com.example.imran_mamirov_hw_LoveCalculator.data.local.HistoryDao
+import com.example.imran_mamirov_hw_LoveCalculator.data.local.HistoryEntity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject

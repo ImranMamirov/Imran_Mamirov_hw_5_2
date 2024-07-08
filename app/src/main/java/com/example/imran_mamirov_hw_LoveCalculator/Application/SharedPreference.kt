@@ -1,10 +1,8 @@
-package com.example.imran_mamirov_hw_LoveCalculator.sharedpreference
+package com.example.imran_mamirov_hw_LoveCalculator.Application
 
 import android.content.SharedPreferences
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
 class SharedPreferences @Inject constructor(private val sharedPreferences: SharedPreferences) {
 
     companion object {
@@ -15,7 +13,7 @@ class SharedPreferences @Inject constructor(private val sharedPreferences: Share
         return sharedPreferences.getBoolean(SHOWN, false)
     }
 
-    fun setOnboardingComplete() {
+    fun setOnboardingComplete(b: Boolean) {
         sharedPreferences.edit().putBoolean(SHOWN, true).apply()
     }
 }

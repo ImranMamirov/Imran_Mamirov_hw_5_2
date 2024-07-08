@@ -3,17 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/loveCalculatorFragment">
-
+    app:startDestination="@id/onboardFragment">
     <fragment
-        android:id="@+id/onBoardFragment"
+        android:id="@+id/onboardFragment"
         android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.onBoard.OnboardFragment"
-        android:label="fragment_on_board"
-        tools:layout="@layout/fragment_on_board" >
+        android:label="OnboardFragment" >
         <action
-            android:id="@+id/action_onBoardFragment_to_loveCalculatorFragment"
+            android:id="@+id/action_onboardFragment_to_loveCalculatorFragment"
             app:destination="@id/loveCalculatorFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/loveCalculatorFragment"
         android:name="com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.love.LoveCalculatorFragment"
@@ -32,9 +35,4 @@
             android:id="@+id/action_resultFragment_to_historyFragment"
             app:destination="@id/historyFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/historyFragment"
-        android:name="com.example.imran_mamirov_hw_LoveCalculator.history.HistoryFragment"
-        android:label="fragment_history"
-        tools:layout="@layout/fragment_history" />
 </navigation>
