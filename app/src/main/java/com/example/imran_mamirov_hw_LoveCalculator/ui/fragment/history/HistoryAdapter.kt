@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.history
+package com.example.imran_mamirov_hw_LoveCalculator.ui.fragment.history
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.imran_mamirov_hw_5_2.databinding.ItemHistoryBinding
+import com.example.imran_mamirov_hw_LoveCalculator.data.local.HistoryEntity
 
 class HistoryAdapter(private val onLongClickListener: (HistoryEntity) -> Unit) :
     ListAdapter<HistoryEntity, HistoryAdapter.HistoryViewHolder>(DiffCallback) {

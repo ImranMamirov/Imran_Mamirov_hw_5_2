@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.ActivityMainBinding
-import com.example.imran_mamirov_hw_LoveCalculator.data.api.LoveApiService
-import com.example.imran_mamirov_hw_LoveCalculator.history.HistoryDao
-import com.example.imran_mamirov_hw_LoveCalculator.sharedpreference.SharedPreferences
+import com.example.imran_mamirov_hw_LoveCalculator.data.network.LoveApiService
+import com.example.imran_mamirov_hw_LoveCalculator.data.local.HistoryDao
+import com.example.imran_mamirov_hw_LoveCalculator.Application.SharedPreferences
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 

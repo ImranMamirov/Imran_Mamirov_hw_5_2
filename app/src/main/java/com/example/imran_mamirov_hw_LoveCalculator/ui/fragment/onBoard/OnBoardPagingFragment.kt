@@ -32,18 +32,22 @@ class OnBoardPagingFragment : Fragment() {
             when (position) {
                 0 -> {
                     tvTitle.text = "It`s Funs and many more"
+                    lottie.setAnimation(R.raw.lottie1)
                 }
                 1 -> {
                     tvTitle.text = "Have a good time " +
                             "You Should take the time to help those who need you"
+                    lottie.setAnimation(R.raw.lottie2)
                 }
                 2 -> {
                     tvTitle.text = "Cherishing love " +
                             "It is now no longer possible for you to cherish love"
+                    lottie.setAnimation(R.raw.lottie3)
                 }
                 3 -> {
                     tvTitle.text = "Have a breakup? " +
                             "We have made the correction  for you don`t worry Maybe someone is waiting for you"
+                    lottie.setAnimation(R.raw.lottie1)
                 }
             }
         }

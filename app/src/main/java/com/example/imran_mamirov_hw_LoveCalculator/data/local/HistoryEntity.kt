@@ -1,4 +1,4 @@
-package com.example.imran_mamirov_hw_LoveCalculator.history
+package com.example.imran_mamirov_hw_LoveCalculator.data.local
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -9,7 +9,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.imran_mamirov_hw_5_2.R
 import com.example.imran_mamirov_hw_5_2.databinding.FragmentOnBoardBinding
-import com.example.imran_mamirov_hw_LoveCalculator.sharedpreference.SharedPreferences
+import com.example.imran_mamirov_hw_LoveCalculator.Application.SharedPreferences
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
